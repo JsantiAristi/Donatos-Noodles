@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------nav*/
+nav {
+    background-color: transparent;
+    position: absolute;
+    padding: 2rem;
+}
+
+nav a {
+    color: white;
+    padding: .5rem 1rem .5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#home {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3rem;
+}
+
+header {
+    background-image: url(../images/fondo.jpg);
+    background-position: 50% 71%;
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------Home*/
+main {
+    background-color: black;
+    min-height: 45vh;
+}
+
+.titulo-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.titulo-home h2 {
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-pages a {
+    color: white;
+    padding: .5rem .5rem;
+    text-decoration: none;
+}
+
+#best {
+    background-color: rgb(77, 74, 74);
+    border: 1px solid white;
+    border-radius: .5rem;
+}
+
+.images-home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+figure {
+    padding: 1rem 0 1rem 0;
+}
+
+.images-home img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-right: 2px solid rgb(77, 74, 74);
+    border-bottom: 2px solid rgb(77, 74, 74);
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.principal-info {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    margin: 0 1rem;
+}
+
+.image-info p{
+    color: white;
+}
+
+.image-info span{
+    color: white;
+    font-weight: bold;
+}
+
+.buy-button {
+    margin: .5rem .8rem 0 0;
+}
+
+.buy-button input {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: .5rem;
+    padding: .2rem;
+}
+
+.buy-button input:hover {
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------more info*/
+.more-info {
+    padding-bottom: 7rem;
+}
+
+.more-info h2 {
+    color: white;
+    text-align: center;
+    margin: 4rem 0 1rem 0;
+}
+
+.list-table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list-table ul li {
+    color: white;
+    font-size: .9rem;
+}
+
+ul {
+    padding-right: 4rem;
+}
+
+table, th , td { 
+    border: 1px solid white; 
+}
+
+td , th {
+    color: white;
+    padding: .5rem;
+    font-size: .9rem;
+}
+
+/*-----------------------------------------------------footer*/
+footer {
+    background-color: black;
+    border-top: 2px solid rgb(77, 74, 74);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+footer p , footer a, legend , label {
+    color: white;
+    text-decoration: none;
+}
+
+legend {
+    color: white;
+}
+
+/*-----------------------------------------------------media queries*/
+@media only screen and (max-width: 767px) {
+    main {
+        padding: .3rem;
+    }
+
+    .list-pages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-home img {
+        width: 8rem;
+        height: 8rem;
+        margin: 0 1rem;
+    }   
+
+    .principal-info {
+        width: 8rem;
+        margin: 0 1rem;
+    }
+
+    .image-info p , .image-info span {
+        font-size: .7rem;
+    }
+
+    .list-table ul li {
+        font-size: .6rem;
+    }
+
+    ul {
+        padding-right: .8rem;
+    }
+
+    td , th {
+        color: white;
+        padding: .3rem;
+        font-size: .6rem;
+    }
+
+    legend {
+        font-size: .7rem;
+    }
+
+    footer p {
+        padding-bottom: 1rem;
+    }
+
+    footer a {
+        padding-top: 1rem;
+    }
+
+}
